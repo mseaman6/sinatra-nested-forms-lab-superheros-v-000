@@ -9,6 +9,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
+      @super_hero_info = params
 
       erb :team
     end
